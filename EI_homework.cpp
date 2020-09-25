@@ -4,16 +4,14 @@
 using namespace std;
 
 int main() {
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
 	float r[7];
 	float e[7];
 	for (int i = 0; i < 6; i++) {
-		cout << "Введите сопротивление R" << i + 1 << endl;
+		cout << "Enter the resistance R" << i + 1 << endl;
 		cin >> r[i];
 	}
 	for (int i = 0; i < 6; i++) {
-		cout << "Введите ЭДС E" << i + 1 << endl;
+		cout << "Enter the EMF E" << i + 1 << endl;
 		cin >> e[i];
 	}
 	float r_b = (r[1] * r[2]) / (r[1] + r[2] + r[4]);
@@ -24,7 +22,7 @@ int main() {
 	float I_a = (e[3] - e[5] - U_dc) / (r[3] + r[5]);
 	float I_b = (U_dc + e[1] - e[2]) / (r[1] + r[2]);
 	float U_xx = e[0] - e[3] + r[1] * I_b + r[3] * I_a;
-	cout << "Ток I1=" << U_xx / (r[0] + r[6]) << endl;
+	cout << "Current I1=" << U_xx / (r[0] + r[6]) << endl;
 	cin.ignore(1,'\n');
 	cin.get();
 }
