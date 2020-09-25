@@ -62,7 +62,7 @@ int main() {
 	cout << "Current I_b=" << I_b << endl << endl;
 
 	cout << "U_xx=E1-E4-E2+R2*I_b+R4*I_a" << endl;
-	float U_xx = e[0] - e[3]-e[1] + r[1] * I_b + r[3] * I_a;
+	float U_xx = e[0] - e[3] - e[1] + r[1] * I_b + r[3] * I_a;
 	cout << "U_xx=" << U_xx << endl << endl;
 
 	cout << "      U_xx   " << endl;
