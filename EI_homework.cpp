@@ -56,7 +56,7 @@ int main() {
 	cout << "I_a=" << I_a << endl << endl;
 
 	cout << "     U_dc+E2-E3 " << endl;
-	cout << "I_a=------------" << endl;
+	cout << "I_b=------------" << endl;
 	cout << "        R2+R3   " << endl;
 	float I_b = (U_dc + e[1] - e[2]) / (r[1] + r[2]);
 	cout << "Current I_b=" << I_b << endl << endl;
