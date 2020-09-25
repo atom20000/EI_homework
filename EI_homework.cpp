@@ -31,7 +31,7 @@ int main() {
 	cout << "R_b=-----------" << endl;
 	cout << "     R2+R3+R5" << endl;
 	float r_d = (r[1] * r[4]) / (r[1] + r[2] + r[4]);
-	cout << "Resistance R_d=" << r_d << endl << endl;
+	cout << "R_d=" << r_d << endl << endl;
 
 	cout << "           (R_d+R4)*(R_c+R6) " << endl;
 	cout << "R_vn=R_b+ -------------------" << endl;
